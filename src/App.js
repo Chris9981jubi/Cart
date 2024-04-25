@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import './ShoppingCart'; // If you have global styles
+import ShoppingCart from './ShoppingCart'; // Importing the ShoppingCart component
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome to My Shopping App</h1>
       </header>
+      <main>
+        <ShoppingCart />
+      </main>
     </div>
   );
 }
